@@ -1,11 +1,14 @@
-import ZeroBorg
+import ZeroBorg3 as ZeroBorg
 from time import sleep
-#ZeroBorg.ScanForZeroBorg()
+
 
 ZB = ZeroBorg.ZeroBorg()
-ZB.i2cAddress = 0x40
+
 ZB.Init()
+print("init")
 ZB.ResetEpo()
+
+print("here")
 
 ZB.SetMotor1(50)
 ZB.SetMotor3(50)

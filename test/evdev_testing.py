@@ -6,4 +6,4 @@ print(PS3)
 
 for event in PS3.read_loop():
     if event.type == ecodes.EV_KEY:
-        print(event.code)
+        print(event)
